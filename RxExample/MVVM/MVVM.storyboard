@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hMG-sO-eQO">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="aHd-eO-tgJ">
+            <objects>
+                <viewController id="hMG-sO-eQO" customClass="MVVMViewController" customModule="RxExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n3y-uG-d7j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="39m-cr-NGJ">
+                                <rect key="frame" x="30" y="553" width="315" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="9GP-Po-HKY"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INPUT" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTB-Ar-Uw2">
+                                <rect key="frame" x="30" y="50" width="315" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98990722427571154" green="0.75942398573183711" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OTB-Ar-Uw2" firstAttribute="top" secondItem="x83-Xk-jym" secondAttribute="top" constant="30" id="23D-w3-IQM"/>
+                            <constraint firstItem="x83-Xk-jym" firstAttribute="bottom" secondItem="39m-cr-NGJ" secondAttribute="bottom" constant="70" id="FxW-VX-GHf"/>
+                            <constraint firstItem="OTB-Ar-Uw2" firstAttribute="leading" secondItem="x83-Xk-jym" secondAttribute="leading" constant="30" id="Lmn-lX-FFj"/>
+                            <constraint firstItem="x83-Xk-jym" firstAttribute="trailing" secondItem="OTB-Ar-Uw2" secondAttribute="trailing" constant="30" id="Q6T-LG-ayS"/>
+                            <constraint firstItem="39m-cr-NGJ" firstAttribute="leading" secondItem="x83-Xk-jym" secondAttribute="leading" constant="30" id="ZjY-SK-sX6"/>
+                            <constraint firstItem="x83-Xk-jym" firstAttribute="trailing" secondItem="39m-cr-NGJ" secondAttribute="trailing" constant="30" id="bi3-70-91p"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="x83-Xk-jym"/>
+                    </view>
+                    <connections>
+                        <outlet property="inputLabel" destination="OTB-Ar-Uw2" id="DjY-76-7k9"/>
+                        <outlet property="textField" destination="39m-cr-NGJ" id="AgU-zl-tyl"/>
+                        <outlet property="textFieldBottomConstraint" destination="FxW-VX-GHf" id="amh-zc-jwz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K0s-SC-A7u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="170" y="152"/>
+        </scene>
+    </scenes>
+</document>

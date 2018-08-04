@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o2r-tS-uu4">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="eJh-Wv-Whu">
+            <objects>
+                <viewController id="o2r-tS-uu4" customClass="MVCViewController" customModule="RxExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hrR-eM-LZv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="MKI-Qu-t0I">
+                                <rect key="frame" x="30" y="553" width="315" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Ttn-sF-Bp3"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INPUT" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v3s-Ud-eTW">
+                                <rect key="frame" x="30" y="50" width="315" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88523393090399605" green="1" blue="0.92511608893992925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YH0-Y1-eNo" firstAttribute="trailing" secondItem="MKI-Qu-t0I" secondAttribute="trailing" constant="30" id="9DG-Fb-bq8"/>
+                            <constraint firstItem="v3s-Ud-eTW" firstAttribute="leading" secondItem="YH0-Y1-eNo" secondAttribute="leading" constant="30" id="JUi-kC-Z5Y"/>
+                            <constraint firstItem="YH0-Y1-eNo" firstAttribute="trailing" secondItem="v3s-Ud-eTW" secondAttribute="trailing" constant="30" id="TmW-ws-tFF"/>
+                            <constraint firstItem="MKI-Qu-t0I" firstAttribute="leading" secondItem="YH0-Y1-eNo" secondAttribute="leading" constant="30" id="rEp-vG-68Z"/>
+                            <constraint firstItem="v3s-Ud-eTW" firstAttribute="top" secondItem="YH0-Y1-eNo" secondAttribute="top" constant="30" id="re1-eA-G49"/>
+                            <constraint firstItem="YH0-Y1-eNo" firstAttribute="bottom" secondItem="MKI-Qu-t0I" secondAttribute="bottom" constant="70" id="va1-Xb-91p"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YH0-Y1-eNo"/>
+                    </view>
+                    <connections>
+                        <outlet property="inputLabel" destination="v3s-Ud-eTW" id="TLh-4m-tCa"/>
+                        <outlet property="textField" destination="MKI-Qu-t0I" id="gyZ-58-8U8"/>
+                        <outlet property="textFieldBottomConstraint" destination="va1-Xb-91p" id="VmF-fk-Hqg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BVQ-w1-NbL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="170" y="152"/>
+        </scene>
+    </scenes>
+</document>

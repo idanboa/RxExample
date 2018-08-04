@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZDi-8S-Bd3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="XfD-np-LvN">
+            <objects>
+                <viewController id="ZDi-8S-Bd3" customClass="MVVMRXViewController" customModule="RxExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bsy-ot-Mth">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="qOH-pk-AH5">
+                                <rect key="frame" x="30" y="553" width="315" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="1dV-sR-rQO"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INPUT" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMX-27-lGW">
+                                <rect key="frame" x="30" y="50" width="315" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bMX-27-lGW" firstAttribute="top" secondItem="2TV-iO-c3o" secondAttribute="top" constant="30" id="bSr-9G-7Zx"/>
+                            <constraint firstItem="2TV-iO-c3o" firstAttribute="bottom" secondItem="qOH-pk-AH5" secondAttribute="bottom" constant="70" id="glc-MO-RAv"/>
+                            <constraint firstItem="bMX-27-lGW" firstAttribute="leading" secondItem="2TV-iO-c3o" secondAttribute="leading" constant="30" id="jBD-SO-hmM"/>
+                            <constraint firstItem="qOH-pk-AH5" firstAttribute="leading" secondItem="2TV-iO-c3o" secondAttribute="leading" constant="30" id="qmp-vo-VRb"/>
+                            <constraint firstItem="2TV-iO-c3o" firstAttribute="trailing" secondItem="qOH-pk-AH5" secondAttribute="trailing" constant="30" id="v6D-X6-NmA"/>
+                            <constraint firstItem="2TV-iO-c3o" firstAttribute="trailing" secondItem="bMX-27-lGW" secondAttribute="trailing" constant="30" id="w0Q-US-wDi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2TV-iO-c3o"/>
+                    </view>
+                    <connections>
+                        <outlet property="inputLabel" destination="bMX-27-lGW" id="QHu-9c-Ebu"/>
+                        <outlet property="textField" destination="qOH-pk-AH5" id="Diz-ru-oK8"/>
+                        <outlet property="textFieldBottomConstraint" destination="glc-MO-RAv" id="Vhs-tG-ee2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x0a-Mn-K45" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="170" y="152"/>
+        </scene>
+    </scenes>
+</document>
