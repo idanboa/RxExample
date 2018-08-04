@@ -26,7 +26,6 @@ class MVCViewController: UIViewController {
         title = model?.title
         inputLabel.text = model?.inputDefaultText
         textField.placeholder = model?.inputFieldPlaceholder
-        textField.backgroundColor = .white
         
         NotificationCenter
             .default

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A900D1A82116501F002C1717 /* MVCRXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A900D1A72116501F002C1717 /* MVCRXViewController.swift */; };
 		A9700EE12113A3A6003F3692 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9700EE02113A3A6003F3692 /* AppDelegate.swift */; };
 		A9700EE32113A3A6003F3692 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9700EE22113A3A6003F3692 /* MainViewController.swift */; };
 		A9700EE62113A3A6003F3692 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9700EE42113A3A6003F3692 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		507C2534999EEAA123D72886 /* Pods_RxExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74131EA936F8CC91A33093DF /* Pods-RxExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxExample/Pods-RxExample.debug.xcconfig"; sourceTree = "<group>"; };
+		A900D1A72116501F002C1717 /* MVCRXViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCRXViewController.swift; sourceTree = "<group>"; };
 		A9700EDD2113A3A6003F3692 /* RxExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9700EE02113A3A6003F3692 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9700EE22113A3A6003F3692 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				A9700EF82113A49B003F3692 /* MVCRX.storyboard */,
+				A900D1A72116501F002C1717 /* MVCRXViewController.swift */,
 			);
 			path = MVCRX;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				A979B1662113B5A000759B5B /* MVVMViewModel.swift in Sources */,
 				A979B1682113B7B000759B5B /* DependencyModel.swift in Sources */,
 				A979B16C2113CE8C00759B5B /* MVVMRXViewModel.swift in Sources */,
+				A900D1A82116501F002C1717 /* MVCRXViewController.swift in Sources */,
 				A9700EE32113A3A6003F3692 /* MainViewController.swift in Sources */,
 				A979B1622113B58F00759B5B /* MVVMViewController.swift in Sources */,
 				A979B16A2113CE7D00759B5B /* MVVMRXViewController.swift in Sources */,

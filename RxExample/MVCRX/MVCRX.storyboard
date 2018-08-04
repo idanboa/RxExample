@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="rf4-hi-wgH">
             <objects>
-                <viewController id="wab-yF-jvt" sceneMemberID="viewController">
+                <viewController id="wab-yF-jvt" customClass="MVCRXViewController" customModule="RxExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ioB-yt-XYG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,6 +46,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SNp-AA-KRe"/>
                     </view>
+                    <connections>
+                        <outlet property="inputLabel" destination="G7P-3h-7Nm" id="Raz-UP-pJZ"/>
+                        <outlet property="textField" destination="dNf-PC-CfY" id="8mC-nA-bVh"/>
+                        <outlet property="textFieldBottomConstraint" destination="WMU-aj-GRO" id="e9w-yg-2i5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fi6-vm-Cvx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

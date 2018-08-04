@@ -31,7 +31,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDL-Qk-Yay">
                                         <rect key="frame" x="0.0" y="87" width="187.5" height="72.5"/>
-                                        <state key="normal" title="MVC-RX - SOON"/>
+                                        <state key="normal" title="MVC-RX"/>
                                         <connections>
                                             <action selector="goToMVCRx" destination="BYZ-38-t0r" eventType="touchUpInside" id="pFb-CO-jLT"/>
                                         </connections>

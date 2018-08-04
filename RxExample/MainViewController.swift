@@ -9,8 +9,6 @@
 import UIKit
 
 class MainViewController: UIViewController {
-
-//    private var mvvmRxViewModel: MVVMRXViewModel!
     
     private struct Constants {
         static let inputDefaultText = "INPUT"
@@ -52,17 +50,23 @@ class MainViewController: UIViewController {
             
             (segue.destination as? MVCViewController)?.model = model
         case Constants.MVCRX.segueID?:
-            break
+            let model = DependencyModel(title: Constants.MVCRX.title,
+                                        inputDefaultText: Constants.inputDefaultText,
+                                        inputFieldPlaceholder: Constants.inputFieldPlaceholder)
+            
+            (segue.destination as? MVCRXViewController)?.model = model
         case Constants.MVVM.segueID?:
             let model = DependencyModel(title: Constants.MVVM.title,
                                         inputDefaultText: Constants.inputDefaultText,
                                         inputFieldPlaceholder: Constants.inputFieldPlaceholder)
+            
             let viewModel = MVVMViewModel(dependency: model)
             (segue.destination as? MVVMViewController)?.viewModel = viewModel
         case Constants.MVVMRX.segueID?:
             let model = DependencyModel(title: Constants.MVVMRX.title,
                                         inputDefaultText: Constants.inputDefaultText,
                                         inputFieldPlaceholder: Constants.inputFieldPlaceholder)
+            
             let viewModel = MVVMRXViewModel(dependency: model)
             (segue.destination as? MVVMRXViewController)?.viewModel = viewModel
         default:
@@ -75,7 +79,7 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func goToMVCRx() {
-//        performSegue(withIdentifier: Constants.MVCRX.segueID, sender: nil)
+        performSegue(withIdentifier: Constants.MVCRX.segueID, sender: nil)
     }
     
     @IBAction func goToMVVM() {
