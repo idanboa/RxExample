@@ -17,7 +17,6 @@
 		A9700EFD2113A4B5003F3692 /* MVVMRX.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9700EFC2113A4B5003F3692 /* MVVMRX.storyboard */; };
 		A9700F022113A543003F3692 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9700EFF2113A543003F3692 /* LaunchScreen.storyboard */; };
 		A9700F032113A543003F3692 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9700F002113A543003F3692 /* Assets.xcassets */; };
-		A9700F042113A543003F3692 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9700F012113A543003F3692 /* Info.plist */; };
 		A9700F082113A76E003F3692 /* MVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9700F072113A76E003F3692 /* MVCViewController.swift */; };
 		A979B1602113B2A900759B5B /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A979B15F2113B2A900759B5B /* UIViewControllerExtension.swift */; };
 		A979B1622113B58F00759B5B /* MVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A979B1612113B58F00759B5B /* MVVMViewController.swift */; };
@@ -232,7 +231,6 @@
 				A9700EE62113A3A6003F3692 /* Main.storyboard in Resources */,
 				A9700EF72113A493003F3692 /* MVC.storyboard in Resources */,
 				A9700F032113A543003F3692 /* Assets.xcassets in Resources */,
-				A9700F042113A543003F3692 /* Info.plist in Resources */,
 				A9700EF92113A49B003F3692 /* MVCRX.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,7 +447,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EKUFC45838;
+				DEVELOPMENT_TEAM = 8M6N6SNSW6;
 				INFOPLIST_FILE = RxExample/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -468,7 +466,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EKUFC45838;
+				DEVELOPMENT_TEAM = 8M6N6SNSW6;
 				INFOPLIST_FILE = RxExample/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

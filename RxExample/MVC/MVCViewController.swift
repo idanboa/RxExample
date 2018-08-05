@@ -10,11 +10,11 @@ import Foundation
 import UIKit
 
 class MVCViewController: UIViewController {    
-    @IBOutlet weak var inputLabel: UILabel!
-    
-    @IBOutlet weak var textFieldBottomConstraint: NSLayoutConstraint!
+    @IBOutlet private var inputLabel: UILabel!
+    @IBOutlet private var textFieldBottomConstraint: NSLayoutConstraint!
+    @IBOutlet private var textField: UITextField!
+
     private var textFieldBottomConstraintOrigin: CGFloat!
-    @IBOutlet weak var textField: UITextField!
     
     var model: DependencyModel!
     
@@ -26,19 +26,20 @@ class MVCViewController: UIViewController {
         title = model?.title
         inputLabel.text = model?.inputDefaultText
         textField.placeholder = model?.inputFieldPlaceholder
-        
+        textField.becomeFirstResponder()
+
         NotificationCenter
             .default
             .addObserver(self,
                          selector: #selector(keyboardWillShow),
-                         name: NSNotification.Name.UIKeyboardWillShow,
+                         name: .UIKeyboardWillShow,
                          object: nil)
         
         NotificationCenter
             .default
             .addObserver(self,
                          selector: #selector(keyboardWillHide),
-                         name: NSNotification.Name.UIKeyboardWillHide,
+                         name: .UIKeyboardWillHide,
                          object: nil)
         
         textField.delegate = self
