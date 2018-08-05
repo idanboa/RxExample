@@ -11,11 +11,11 @@ import RxSwift
 import RxCocoa
 
 class MVCRXViewController: UIViewController {
-    @IBOutlet weak var inputLabel: UILabel!
-    
-    @IBOutlet weak var textFieldBottomConstraint: NSLayoutConstraint!
+    @IBOutlet private var inputLabel: UILabel!
+    @IBOutlet private var textFieldBottomConstraint: NSLayoutConstraint!
+    @IBOutlet private var textField: UITextField!
+
     private var textFieldBottomConstraintOrigin: CGFloat!
-    @IBOutlet weak var textField: UITextField!
     
     var model: DependencyModel!
     
@@ -29,6 +29,7 @@ class MVCRXViewController: UIViewController {
         title = model?.title
         inputLabel.text = model?.inputDefaultText
         textField.placeholder = model?.inputFieldPlaceholder
+        textField.becomeFirstResponder()
         
         let showKeyboardNotification = NotificationCenter
             .default

@@ -10,11 +10,9 @@ import Foundation
 import UIKit
 
 class MVVMViewController: UIViewController {
-    @IBOutlet weak var inputLabel: UILabel!
-    
-    @IBOutlet weak var textFieldBottomConstraint: NSLayoutConstraint!
-    
-    @IBOutlet weak var textField: UITextField!
+    @IBOutlet private var inputLabel: UILabel!
+    @IBOutlet private var textFieldBottomConstraint: NSLayoutConstraint!
+    @IBOutlet private var textField: UITextField!
     
     var viewModel: MVVMViewModel!
     
@@ -24,6 +22,7 @@ class MVVMViewController: UIViewController {
         title = viewModel.title
         inputLabel.text = viewModel.inputDefaultText
         textField.placeholder = viewModel.inputFieldPlaceholder
+        textField.becomeFirstResponder()
         
         viewModel.textFieldBottomConstraintOrigin = textFieldBottomConstraint.constant
         

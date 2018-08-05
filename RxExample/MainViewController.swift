@@ -15,22 +15,18 @@ class MainViewController: UIViewController {
         static let inputFieldPlaceholder = "type something"
         
         struct MVC {
-            static let segueID = "mvcSegueID"
             static let title = "MVC"
         }
         
         struct MVCRX {
-            static let segueID = "mvcRxSegueID"
             static let title = "MVC-RX"
         }
         
         struct MVVM {
-            static let segueID = "mvvmSegueID"
             static let title = "MVVM"
         }
         
         struct MVVMRX {
-            static let segueID = "mvvmRxSegueID"
             static let title = "MVVM-RX"
         }
     }
@@ -42,52 +38,34 @@ class MainViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        switch segue.identifier {
-        case Constants.MVC.segueID?:
+        switch segue.destination {
+        case let mvcViewController as MVCViewController:
             let model = DependencyModel(title: Constants.MVC.title,
                                         inputDefaultText: Constants.inputDefaultText,
                                         inputFieldPlaceholder: Constants.inputFieldPlaceholder)
-            
-            (segue.destination as? MVCViewController)?.model = model
-        case Constants.MVCRX.segueID?:
+            mvcViewController.model = model
+        case let mvcRXViewController as MVCRXViewController:
             let model = DependencyModel(title: Constants.MVCRX.title,
                                         inputDefaultText: Constants.inputDefaultText,
                                         inputFieldPlaceholder: Constants.inputFieldPlaceholder)
-            
-            (segue.destination as? MVCRXViewController)?.model = model
-        case Constants.MVVM.segueID?:
+            mvcRXViewController.model = model
+        case let mvvmViewController as MVVMViewController:
             let model = DependencyModel(title: Constants.MVVM.title,
                                         inputDefaultText: Constants.inputDefaultText,
                                         inputFieldPlaceholder: Constants.inputFieldPlaceholder)
-            
+
             let viewModel = MVVMViewModel(dependency: model)
-            (segue.destination as? MVVMViewController)?.viewModel = viewModel
-        case Constants.MVVMRX.segueID?:
+            mvvmViewController.viewModel = viewModel
+        case let mvvmRXViewController as MVVMRXViewController:
             let model = DependencyModel(title: Constants.MVVMRX.title,
                                         inputDefaultText: Constants.inputDefaultText,
                                         inputFieldPlaceholder: Constants.inputFieldPlaceholder)
-            
+
             let viewModel = MVVMRXViewModel(dependency: model)
-            (segue.destination as? MVVMRXViewController)?.viewModel = viewModel
+            mvvmRXViewController.viewModel = viewModel
         default:
             break
         }
-    }
-    
-    @IBAction func goToMVC() {
-        performSegue(withIdentifier: Constants.MVC.segueID, sender: nil)
-    }
-    
-    @IBAction func goToMVCRx() {
-        performSegue(withIdentifier: Constants.MVCRX.segueID, sender: nil)
-    }
-    
-    @IBAction func goToMVVM() {
-        performSegue(withIdentifier: Constants.MVVM.segueID, sender: nil)
-    }
-    
-    @IBAction func goToMVVMRx() {
-        performSegue(withIdentifier: Constants.MVVMRX.segueID, sender: nil)
     }
 }
 

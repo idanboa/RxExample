@@ -12,19 +12,17 @@ import RxSwift
 import RxCocoa
 
 class MVVMRXViewController: UIViewController {
-    @IBOutlet weak var inputLabel: UILabel!
-    
-    @IBOutlet weak var textFieldBottomConstraint: NSLayoutConstraint!
-    
-    @IBOutlet weak var textField: UITextField!
+    @IBOutlet private var inputLabel: UILabel!
+    @IBOutlet private var textFieldBottomConstraint: NSLayoutConstraint!
+    @IBOutlet private var textField: UITextField!
     
     var viewModel: MVVMRXViewModel!
     
-    let bag = DisposeBag()
+    private let bag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        textField.becomeFirstResponder()
         bindViewModel()
     }
     

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ejg-6t-Ay5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.3.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ejg-6t-Ay5">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,28 +25,28 @@
                                         <rect key="frame" x="0.0" y="0.0" width="187.5" height="72"/>
                                         <state key="normal" title="MVC"/>
                                         <connections>
-                                            <action selector="goToMVC" destination="BYZ-38-t0r" eventType="touchUpInside" id="xsL-uq-jvL"/>
+                                            <segue destination="aHI-H7-WWf" kind="show" id="WjS-h9-xLa"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDL-Qk-Yay">
-                                        <rect key="frame" x="0.0" y="87" width="187.5" height="72.5"/>
+                                        <rect key="frame" x="0.0" y="87" width="187.5" height="72"/>
                                         <state key="normal" title="MVC-RX"/>
                                         <connections>
-                                            <action selector="goToMVCRx" destination="BYZ-38-t0r" eventType="touchUpInside" id="pFb-CO-jLT"/>
+                                            <segue destination="Jkq-H1-leV" kind="show" id="P3g-a8-mD5"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogj-uv-aR5">
-                                        <rect key="frame" x="0.0" y="174.5" width="187.5" height="72"/>
+                                        <rect key="frame" x="0.0" y="174" width="187.5" height="72"/>
                                         <state key="normal" title="MVVM"/>
                                         <connections>
-                                            <action selector="goToMVVM" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tql-FI-T70"/>
+                                            <segue destination="w8m-4V-UmQ" kind="show" id="pah-Ek-w7I"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyy-WG-LzC">
-                                        <rect key="frame" x="0.0" y="261.5" width="187.5" height="72"/>
+                                        <rect key="frame" x="0.0" y="261" width="187.5" height="72.5"/>
                                         <state key="normal" title="MVVM-RX"/>
                                         <connections>
-                                            <action selector="goToMVVMRx" destination="BYZ-38-t0r" eventType="touchUpInside" id="JBT-pi-Ejv"/>
+                                            <segue destination="jIB-Iy-uAi" kind="show" id="kKh-GY-bUy"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -63,12 +62,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="n8Q-Dg-yEs"/>
-                    <connections>
-                        <segue destination="aHI-H7-WWf" kind="show" identifier="mvcSegueID" id="K1G-j3-0aL"/>
-                        <segue destination="Jkq-H1-leV" kind="show" identifier="mvcRxSegueID" id="hxd-KZ-mrT"/>
-                        <segue destination="w8m-4V-UmQ" kind="show" identifier="mvvmSegueID" id="0uy-kM-6gf"/>
-                        <segue destination="jIB-Iy-uAi" kind="show" identifier="mvvmRxSegueID" id="GF6-oz-oXn"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
